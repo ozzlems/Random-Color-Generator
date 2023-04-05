@@ -1,0 +1,69 @@
+body{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ddffbb;
+}
+
+.container{
+    height: 360px;
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.color-card{
+    background-color: #ddffbb;
+    position: absolute;   /*container is parent of color card*/
+    width: 280px;
+    height: 280px;
+    top: 40px;
+    left: -50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 320px;
+    margin-left: 160px;
+
+}
+
+#hex{
+    display: block;
+    color: white;
+    font-size: 40px;
+    margin: 30px;
+    text-transform: uppercase;
+    font-family: "Poppins" , sans-serif;
+    font-weight: medium;
+    }
+
+    button{
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 4px;
+        padding: 10px 20px ;
+        box-shadow: 6px 5px #00000024,2px 6px #62626224 ;
+        font-family: "Poppins" , sans-serif;
+        letter-spacing: 1.5px;
+        font-weight:500;
+        font-size: 15px;
+        cursor: pointer;
+       
+        
+    }
+
+    button:hover {
+        border-radius: 5px;
+        box-shadow: #68686824 5px 5px, #58585824 10px 10px, #60606024 15px 15px, rgba(84, 84, 84, 0.1) 20px 20px, rgba(178, 178, 178, 0.05) 25px 25px;
+        transition: 0.2s ease-in-out;
+    }
