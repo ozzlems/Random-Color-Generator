@@ -14,8 +14,22 @@ function getNewColor(){
     document.body.style.background = color;
     colorCard.style.background = color;
     document.getElementById("hex").innerHTML = color;
-
 }
+
+document.getElementById("copy-button").addEventListener("click" , function(){
+    var hexCode = document.getElementById("hex").innerHTML;
+    navigator.clipboard.writeText(hexCode);
+    var messageDisplay = document.getElementById("message-display");
+    messageDisplay.innerHTML = "HEX code is copied ! ";
+    messageDisplay.classList.add("slide-up"); 
+    setTimeout(function() {
+        messageDisplay.innerHTML = "";
+      }, 2000);
+    
+})
+
+
+
 
 
 
