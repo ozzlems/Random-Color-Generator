@@ -87,17 +87,17 @@ body{
         font-size: 16px;
        justify-content: right;
        align-items: right;
-        margin-left:580px;
+        margin-left:570px;
        top:-52px;
        padding: 2px;
-       font-weight: 520;
+       font-weight: 560;
        font-family: "Poppins" , sans-serif;
         letter-spacing: 1.2px;
           color: #000;
         }
         .slide-up {
             animation-name: slideUp;
-            animation-duration: 1.5s;
+            animation-duration: 3.5s;
             animation-fill-mode: forwards;
           }
           
@@ -108,7 +108,7 @@ body{
             }
             100% {
               opacity: 0;
-              transform: translate(0, -80%);
+              transform: translate(0, -100%);
             }
           }
       
